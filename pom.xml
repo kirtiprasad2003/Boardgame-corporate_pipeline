@@ -21,9 +21,9 @@
     <packaging>jar</packaging>
 
     <properties>
-        <!-- JAVA -->
-        <java.version>21</java.version>
-        <maven.compiler.release>21</maven.compiler.release>
+        <!-- JAVA (FIXED) -->
+        <java.version>17</java.version>
+        <maven.compiler.release>17</maven.compiler.release>
 
         <!-- JACOCO + SONAR -->
         <jacoco.version>0.8.7</jacoco.version>
@@ -94,7 +94,7 @@
     <build>
         <plugins>
 
-            <!-- ✅ FIX: Java 21 compatible compiler -->
+            <!-- ✅ FIX: Explicit Java 17 compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
